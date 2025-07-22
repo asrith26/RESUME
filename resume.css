@@ -1,0 +1,155 @@
+
+        /* --- General Styling --- */
+        :root {
+            --primary-color: #2c3e50; /* Dark Blue */
+            --secondary-color: #3498db; /* Bright Blue */
+            --light-gray: #ecf0f1;
+            --dark-gray: #34495e;
+            --text-color: #555;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+        }
+
+        /* --- Sidebar (Left Column) --- */
+        .sidebar {
+            background-color: var(--primary-color);
+            color: var(--light-gray);
+            padding: 2rem;
+            width: 35%;
+        }
+
+        .sidebar h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar .contact-info p {
+            margin: 0.5rem 0;
+        }
+        
+        .sidebar .contact-info a {
+            color: var(--light-gray);
+        }
+        
+        .sidebar .contact-info i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .sidebar h2 {
+            color: #fff;
+            border-bottom: 2px solid var(--light-gray);
+        }
+        
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .skills-list li {
+            background-color: var(--dark-gray);
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-bottom: 8px;
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* --- Main Content (Right Column) --- */
+        .main-content {
+            padding: 2rem;
+            width: 65%;
+        }
+
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .education-table th, .education-table td {
+            text-align: left;
+            padding: 12px 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .education-table th {
+            font-weight: 600;
+            color: var(--dark-gray);
+        }
+        
+        .education-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .projects-list, .positions-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .projects-list > li, .positions-list > li {
+            margin-bottom: 1.5rem;
+        }
+        
+        .projects-list ul {
+            list-style-type: circle;
+            padding-left: 20px;
+            margin-top: 0.5rem;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .resume-container {
+                flex-direction: column;
+                margin: 0;
+                box-shadow: none;
+            }
+
+            .sidebar, .main-content {
+                width: 100%;
+                padding: 1.5rem;
+                box-sizing: border-box;
+            }
+            .sidebar h1 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+        }
+    
